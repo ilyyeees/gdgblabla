@@ -46,6 +46,16 @@
           width: 100% !important;
           text-align: center !important;
         }
+        /* This will reset side padding on stacked columns */
+        .stack-column td {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        /* This will reduce padding on main content areas */
+        .mobile-side-padding {
+          padding-left: 16px !important;
+          padding-right: 16px !important;
+        }
         .mobile-center {
           text-align: center !important;
         }
@@ -143,6 +153,7 @@
                     cellpadding="0"
                     border="0"
                     style="padding: 32px 32px 16px"
+                    class="mobile-side-padding"
                   >
                     <tr class="stack-column">
                       <td
@@ -198,7 +209,10 @@
                     border="0"
                   >
                     <tr>
-                      <td style="padding: 0 32px 16px">
+                      <td
+                        class="mobile-side-padding"
+                        style="padding: 0 32px 16px"
+                      >
                         <img
                           src="https://i.imgur.com/f42jjdX.png"
                           width="504"
@@ -219,6 +233,7 @@
                     cellspacing="0"
                     cellpadding="0"
                     border="0"
+                    class="mobile-side-padding"
                     style="padding: 0 32px 0"
                   >
                     <tr>
@@ -340,6 +355,7 @@
                     cellspacing="0"
                     cellpadding="0"
                     border="0"
+                    class="mobile-side-padding"
                     style="padding: 0 40px 0"
                   >
                     <tr class="stack-column">
@@ -458,6 +474,7 @@
                     cellspacing="0"
                     cellpadding="0"
                     border="0"
+                    class="mobile-side-padding"
                     style="padding: 8px 40px 32px"
                   >
                     <tr class="stack-column">
