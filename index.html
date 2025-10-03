@@ -39,56 +39,142 @@
       @media screen and (max-width: 600px) {
         .email-container {
           width: 100% !important;
+          max-width: 100% !important;
         }
+
+        /* Force tables to be full width */
+        table {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        /* Stack columns */
         .stack-column,
         .stack-column td {
           display: block !important;
           width: 100% !important;
-          text-align: center !important;
+          max-width: 100% !important;
         }
-        /* This will reset side padding on stacked columns */
+
+        /* Reset ALL padding on stacked columns */
         .stack-column td {
-          padding-left: 0 !important;
-          padding-right: 0 !important;
+          padding: 0 !important;
           padding-bottom: 16px !important;
         }
-        /* This will reduce padding on main content areas */
+
+        /* Reduce side padding everywhere */
         .mobile-side-padding {
-          padding-left: 16px !important;
-          padding-right: 16px !important;
+          padding-left: 12px !important;
+          padding-right: 12px !important;
         }
+
         .mobile-center {
-          text-align: center !important;
+          text-align: left !important;
         }
+
+        /* Scale down hero */
         .hero-title {
-          font-size: 24px !important;
-          line-height: 32px !important;
+          font-size: 22px !important;
+          line-height: 28px !important;
         }
+
+        /* Aggressive padding reduction */
         .inner-padding {
-          padding: 20px !important;
+          padding: 16px !important;
         }
-        /* Adjust text sizes for mobile */
+
+        .mobile-padding-16 {
+          padding: 12px !important;
+        }
+
+        /* Text scaling */
         .mobile-text-14 {
-          font-size: 14px !important;
-          line-height: 20px !important;
+          font-size: 13px !important;
+          line-height: 18px !important;
         }
+
         .mobile-text-18 {
-          font-size: 18px !important;
-          line-height: 26px !important;
+          font-size: 16px !important;
+          line-height: 22px !important;
         }
-        /* Stack info cards vertically */
+
+        /* Force info cards to stack with no side padding */
         .info-card {
           display: block !important;
           width: 100% !important;
-          padding: 0 0 16px 0 !important;
+          max-width: 100% !important;
+          padding: 0 !important;
+          padding-bottom: 12px !important;
         }
-        /* Reduce padding on mobile */
-        .mobile-padding-16 {
+
+        /* Scale down all images */
+        img {
+          width: 100% !important;
+          max-width: 120px !important;
+          height: auto !important;
+          margin: 0 auto !important;
+        }
+
+        /* Make social icons smaller */
+        img[width='28'] {
+          width: 24px !important;
+          height: 24px !important;
+          max-width: 24px !important;
+        }
+
+        /* Main content image should be full width */
+        img[width='504'] {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        /* Logo sizing */
+        img[width='140'] {
+          width: 100px !important;
+          max-width: 100px !important;
+        }
+
+        /* Reduce all font sizes slightly */
+        p {
+          font-size: 14px !important;
+          line-height: 20px !important;
+        }
+
+        /* Make colored stripe thinner */
+        td[style*='height: 6px'] {
+          height: 4px !important;
+        }
+
+        /* Fix outer padding */
+        td[style*='padding: 24px 16px'] {
+          padding: 12px 8px !important;
+        }
+
+        /* Fix all table padding */
+        table[style*='padding: 32px'] {
           padding: 16px !important;
         }
-        /* Center images */
-        img {
-          margin: 0 auto !important;
+
+        table[style*='padding: 0 32px'] {
+          padding: 0 12px !important;
+        }
+
+        table[style*='padding: 8px 40px 32px'] {
+          padding: 12px !important;
+        }
+
+        table[style*='padding: 0 40px'] {
+          padding: 0 12px !important;
+        }
+
+        /* Fix info card inner padding */
+        td[style*='padding: 20px'] {
+          padding: 12px !important;
+        }
+
+        /* Ensure border radius doesn't break */
+        td[style*='border-radius'] {
+          border-radius: 12px !important;
         }
       }
     </style>
